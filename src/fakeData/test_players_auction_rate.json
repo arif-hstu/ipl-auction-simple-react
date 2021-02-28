@@ -1,0 +1,84 @@
+[{
+  "id": 1,
+  "first_name": "Kane",
+  "last_name": "Williamson",
+  "rating": 919,
+  "Date of Birth": "08 August 1990",
+  "auction_rate": 2000000,
+  "role":"Batter",
+  "team": "NZ",
+  "image": "https://resources.pulse.icc-cricket.com/players/130x150/440.png"
+}, {
+  "id": 2,
+  "first_name": "Steve",
+  "last_name": "Smith",
+  "rating": 891,
+  "Date of Birth": "02 June 1989",
+  "auction_rate": 2000000,
+  "role":"Batter",
+  "team": "AUS",
+  "image": "https://resources.pulse.icc-cricket.com/players/210/271.png"
+}, {
+  "id": 3,
+  "first_name": "Marnus",
+  "last_name": "Labuschagne",
+  "rating": 878,
+  "Date of Birth": "22 June 1994",
+  "auction_rate": 3000000,
+  "role":"Batter",
+  "team": "AUS",
+  "image": "https://resources.pulse.icc-cricket.com/players/210/4029.png"
+}, 
+{
+  "id": 4,
+  "first_name": "Joe",
+  "last_name": "Root",
+  "rating": 853,
+  "Date of Birth": "30 December 1990",
+  "auction_rate": 6000000,
+  "role":"Batter",
+  "team": "ENG",
+  "image": "https://resources.pulse.icc-cricket.com/players/210/887.png"
+}, {
+  "id": 5,
+  "first_name": "Kane",
+  "last_name": "Williamson",
+  "rating": 919,
+  "Date of Birth": "08 August 1990",
+  "auction_rate": 2000000,
+  "role":"Batter",
+  "team": "NZ",
+  "image": "https://resources.pulse.icc-cricket.com/players/130x150/440.png"
+}, {
+  "id": 6,
+  "first_name": "Steve",
+  "last_name": "Smith",
+  "rating": 891,
+  "Date of Birth": "02 June 1989",
+  "auction_rate": 2000000,
+  "role":"Batter",
+  "team": "AUS",
+  "image": "https://resources.pulse.icc-cricket.com/players/210/271.png"
+}, {
+  "id": 7,
+  "first_name": "Marnus",
+  "last_name": "Labuschagne",
+  "rating": 878,
+  "Date of Birth": "22 June 1994",
+  "auction_rate": 3000000,
+  "role":"Batter",
+  "team": "AUS",
+  "image": "https://resources.pulse.icc-cricket.com/players/210/4029.png"
+}, 
+{
+  "id": 8,
+  "first_name": "Joe",
+  "last_name": "Root",
+  "rating": 853,
+  "Date of Birth": "30 December 1990",
+  "auction_rate": 6000000,
+  "role":"Batter",
+  "team": "ENG",
+  "image": "https://resources.pulse.icc-cricket.com/players/210/887.png"
+}
+]

@@ -1,0 +1,7 @@
+.main {
+    display: flex;
+}
+
+.player-cards {
+    width: 70%;
+}
