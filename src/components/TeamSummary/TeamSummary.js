@@ -4,10 +4,11 @@ import React from 'react';
 import './TeamSummary.css'
 
 const TeamSummary = (props) => {
-
+    // get the total amount of auction
     const auctionTotal = props.playerList.reduce((total, player) => {
         return total + player.auction_rate;
     }, 0)
+
     return (
         <div className='summary-holder'>
             <h2>Team Summary</h2>

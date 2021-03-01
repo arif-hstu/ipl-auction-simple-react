@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 // import fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -9,13 +8,14 @@ import './Player.css';
 
 const Player = (props) => {
 
-    const { first_name, last_name, auction_rate, image, role, team, date_of_birth, flag} = props.player;
+    const {first_name, last_name, auction_rate, image, role, team, date_of_birth, flag, rating} = props.player;
     return (
         <div className="player-card">
             <div className="info-holder">
                 <h3>{first_name} {last_name}</h3>
                 <hr/>
                 <p>Team: {team} <img src={flag} alt='Flag'></img></p>
+                <p>Rating: {rating}</p>
                 <p>Role: {role}</p>
                 <p>Date of Birth: {date_of_birth}</p>
                 <p>Auction Rate: ₹{auction_rate}</p>
