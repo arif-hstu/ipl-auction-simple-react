@@ -1,20 +1,42 @@
 import React from 'react';
 
+// import styleSheet
+import './TeamSummary.css'
+
 const TeamSummary = (props) => {
 
-    const auctionTotal = props.playerList.reduce((total, player)=>{
+    const auctionTotal = props.playerList.reduce((total, player) => {
         return total + player.auction_rate;
     }, 0)
     return (
-        <div>
-            <h2>Player Selected: {props.playerList.length}</h2>
-            <h3>Name of the Players:</h3>
+        <div className='summary-holder'>
+            <h2>Team Summary</h2>
+            <h3>Players: <em><span className='italic'>Selected({props.playerList.length})</span></em></h3>
             {
-                props.playerList.map(player => <h5>{player.first_name} {player.last_name} .... {player.auction_rate}</h5>)
+                props.playerList.map(player => {
+                    return (
+                        <div className='name-auction'>
+                            <div className='name'>
+                                <p className='name-holder'>{player.first_name} {player.last_name}</p>
+                            </div>
+                            <div className='auction'>
+                                <p>${player.auction_rate}</p>
+                            </div>
+                        </div>
+                    )
+                })
             }
-            <h3>Auction total: {auctionTotal}</h3>
+            <hr/>
+            <div className='auction-total'>
+                <div className="auction-text">
+                    <p>Auction total</p>
+                </div>
+                <div className="auction-amount">
+                    <p>${auctionTotal}</p>
+                </div>
+            </div>
 
-        </div>
+        </div >
     );
 };
 

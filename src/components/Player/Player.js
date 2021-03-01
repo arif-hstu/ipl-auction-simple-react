@@ -1,16 +1,31 @@
 import React from 'react';
 
+
+// import fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 // import styleSheet
 import './Player.css'
 
 const Player = (props) => {
 
-    const {first_name, last_name, auction_rate} = props.player;
+    const { first_name, last_name, auction_rate, image, role, team, date_of_birth} = props.player;
     return (
         <div className="player-card">
-            <h3>Name: {first_name} {last_name}</h3>
-            <h5>Auction Rate:{auction_rate}</h5>
-            <button onClick={props.playerAddHandler}>Add to Team</button>
+            <div className="info-holder">
+                <h3>{first_name} {last_name}</h3>
+                <hr/>
+                <p>Team: {team}</p>
+                <p>Role: {role}</p>
+                <p>Date of Birth: {date_of_birth}</p>
+                <p>Auction Rate: ${auction_rate}</p>
+                <button onClick={props.playerAddHandler}> <FontAwesomeIcon icon={faPlus} /> Add to Team</button>
+            </div>
+            <div className="image-holder">
+                <div className="image">
+                    <img src={image} alt="" />
+                </div>
+            </div>
         </div>
     );
 };

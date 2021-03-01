@@ -19,13 +19,13 @@ const MainDisplay = () => {
     }
 
     return (
-        <div className='main'>
-            <div className="player-cards">
+        <div className='main row align-item-center'>
+            <div className='player-holder col-8'>
                 {
                     playerData.map(player => <Player playerAddHandler={() => playerAddHandler(player)} player={player}></Player>)
                 }
             </div>
-            <div className="team-summary">
+            <div className="team-summary col-3">
                 <TeamSummary playerList={playerList}></TeamSummary>
             </div>
         </div>

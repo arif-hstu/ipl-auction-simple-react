@@ -1,7 +1,15 @@
 .main {
     display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
-.player-cards {
-    width: 70%;
+.player-holder {
+    /* width: 75%; */
+    margin-left: 3%;
+}
+
+.team-summary {
+    margin-right: 3%;
+    /* width: 30%; */
 }
