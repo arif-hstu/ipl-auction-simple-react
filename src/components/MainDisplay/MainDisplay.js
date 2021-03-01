@@ -1,21 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // import styleSheet
 import './MainDisplay.css';
 
 // import components
-import playerData from '../../fakeData/test_players_auction_rate.json';
-import Player from '../Player/Player'
+// import cricketPlayers from '../../fakeData/cricket_players';
+import Player from '../Player/Player';
 import TeamSummary from '../TeamSummary/TeamSummary';
 
 const MainDisplay = () => {
 
+    const [playerData, setplayerData] = useState([]);
+    // fetch data from fakeDate
+    useEffect(() => {
+        fetch('https://api.mocki.io/v1/55c0e90b')
+        .then(res => res.json())
+        .then(data => setplayerData(data))
+        .catch(err => console.log(err));
+    }, []);
 
     const [playerList, setPlayerList] = useState([]);
+
     const playerAddHandler = (newPlayer) => {
-        const newPlayerList = [...playerList, newPlayer];
-        setPlayerList(newPlayerList);
-    
+
+        if(playerList.includes(newPlayer) === true){
+            alert('You have already added!');
+        } else {
+            const newPlayerList = [...playerList, newPlayer];
+            setPlayerList(newPlayerList);
+        }
+
     }
 
     return (

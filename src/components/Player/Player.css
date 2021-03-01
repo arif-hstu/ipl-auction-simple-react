@@ -1,7 +1,6 @@
 .player-card {
-    /* margin-left: 3%; */
     width: 95%;
-    background: linear-gradient(to right,#0051d9, #00339c);
+    background: linear-gradient(to right,#1d4fbb, #0e2685);
     Padding: 3% 5%;
     margin-bottom: 3%;
     color: #fff;
@@ -30,7 +29,7 @@
 button {
     background-color: #fff;
     border-style: none;
-    border-radius: 3px;
+    border-radius: 3px !important;
     padding: 8px 25px;
     font-size: small;
     color: #0f5899;
@@ -51,9 +50,11 @@ button:focus {
 
 .image {
     width: 200px;
+    height: 200px;
 }
 .image-holder img {
     width: 100%;
+    height: 100%;
     background-color: #fff;
     border-radius: 50%;
 }

@@ -20,7 +20,7 @@ const TeamSummary = (props) => {
                                 <p className='name-holder'>{player.first_name} {player.last_name}</p>
                             </div>
                             <div className='auction'>
-                                <p>${player.auction_rate}</p>
+                                <p>₹{player.auction_rate}</p>
                             </div>
                         </div>
                     )
@@ -32,7 +32,7 @@ const TeamSummary = (props) => {
                     <p>Auction total</p>
                 </div>
                 <div className="auction-amount">
-                    <p>${auctionTotal}</p>
+                    <p>₹{auctionTotal}</p>
                 </div>
             </div>
 
